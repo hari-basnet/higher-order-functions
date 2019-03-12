@@ -1,3 +1,15 @@
 body {
     margin: 50px 100px;
 }
+
+.container {
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container > div{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid purple;
+}

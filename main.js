@@ -130,3 +130,22 @@ let countryWithLand = countries.filter(function (country){
     return country.match(/[Ll]and/);
 });
 console.log(countryWithLand);
+
+
+// dom manipulatio randomm
+
+
+
+// creating dom element 
+
+
+let titles;
+const container = document.querySelector('.container');
+for(let i = 0; i < 20; i++){
+    titles = document.createElement('div');
+    titles.textContent = 'I am a saint';
+    container.appendChild(titles);
+
+}
+
+
