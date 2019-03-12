@@ -148,4 +148,51 @@ for(let i = 0; i < 20; i++){
 
 }
 
+// 9
+// Use filter to filter out countries having six character.
+let countryLengthSix = countries.filter(function(country){
+    return country.length === 6;
+})
+console.log(countryLengthSix);
 
+// 10
+// Use filter to filter out countries containing six letters in the counntry array.
+
+// 11
+// Use filter to filter out country start with 'E';
+let countriesNameE = countries.filter(function(country){
+    return country.indexOf('Finland');
+})
+console.log(countriesNameE); //????????????????????????
+
+// 12
+// Declare a function called getStringLists which takes an array 
+// as a parameter and then returns an array only with string items.
+
+const mixedArray = [1, 'Pandora', 33, undefined, 'tea and code', 9, 7, true];
+
+function getStringLists (array){
+
+    let result = array.filter(element => {
+        return typeof element === 'string';        
+    });
+
+    return result;
+}
+console.log(getStringLists(mixedArray));
+
+// 13
+// Use reduce to sum all the numbers in the numbers array.
+let reduced = newNumbers.reduce((total, number) => { // reduce takes two paameters 
+    return total + number;
+});
+console.log(reduced);
+
+// 14
+// Use reduce to concatinate all the countries and to produce this sentence: 
+// Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+let concatSentence = countries.reduce((ses, element) => {
+
+    return `${ses}, ${element} ` + ;
+}) 
+console.log(concatSentence);
