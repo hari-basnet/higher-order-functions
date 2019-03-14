@@ -193,6 +193,6 @@ console.log(reduced);
 // Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 let concatSentence = countries.reduce((ses, element) => {
 
-    return `${ses}, ${element} ` + ;
+    return ses =ses + element+ ' ' ;
 }) 
 console.log(concatSentence);
